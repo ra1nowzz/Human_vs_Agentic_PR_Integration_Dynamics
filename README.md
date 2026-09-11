@@ -42,7 +42,7 @@ Within the repository-aligned cohort, the Aalen–Johansen estimator yields the 
 ## Method
 
 - **Cohort:** Human and agentic PRs are restricted to repositories appearing in both datasets to improve comparability.
-- **Outcomes:** Merge is the event of interest. Because unmerged closure precludes a subsequent merge, it is treated as a **competing event** rather than ordinary censoring. Unresolved PRs are right-censored.
+- **Outcomes:** Merge is the event of interest. Assuming unmerged closure as a terminal outcome (i.e., without modeling the potential for a PR to be reopened), it is treated as a competing event rather than ordinary censoring. Unresolved PRs are right-censored.
 - **Follow-up:** PRs are observed up to 60 days after creation or until the dataset cutoff, whichever is earlier.
 - **Estimator:** The cumulative incidence of merge is estimated using the **Aalen–Johansen estimator**.
 - **Methodological Comparison:** As a methodological comparison, we compare Aalen–Johansen estimates with 1 − Kaplan–Meier, where unmerged closure is treated as censoring, to illustrate how competing-event handling changes the estimated merge probability.
@@ -51,7 +51,7 @@ Within the repository-aligned cohort, the Aalen–Johansen estimator yields the 
 
 #### Why Competing Risks Matter
 
-Closed-unmerged PRs preclude a subsequent merge and therefore constitute a **competing event** rather than ordinary censoring.
+Under our modeling assumptions, unmerged closure acts as a terminal state that precludes a subsequent merge, thereby constituting a competing event rather than ordinary censoring.
 
 ![KM vs AJ comparison](figures/Methodology_Comparison_ALL_Agents_KM_vs_AJ.png)
 
@@ -122,3 +122,17 @@ This analysis is exploratory and observational. Key limitations include:
 ## Status
 
 This repository contains preliminary empirical research conducted as part of an ongoing exploration into empirical software engineering and AI-assisted software development.
+
+---
+
+## References
+
+[1] H. Li, H. Zhang, and A. E. Hassan, "The Rise of AI Teammates in Software Engineering (SE) 3.0: How Autonomous Coding Agents Are Reshaping Software Engineering," *arXiv preprint arXiv:2507.15003*, 2025. (Dataset `hao-li/AIDev`)
+[2] M. Watanabe, H. Li, Y. Kashiwa, B. Reid, H. Iida, and A. E. Hassan, "On the Use of Agentic Coding: An Empirical Study of Pull Requests on GitHub," *ACM Transactions on Software Engineering and Methodology (TOSEM)*, 2026.
+
+---
+
+## License & Acknowledgements
+
+* **Code**: The analytical code in this repository is open-sourced under the [MIT License](LICENSE). 
+* **Data**: This project utilizes the [AIDev dataset](https://huggingface.co/datasets/hao-li/AIDev), which is distributed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) License](https://creativecommons.org/licenses/by/4.0/) by Hao Li, Haoxiang Zhang, and Ahmed E. Hassan.
