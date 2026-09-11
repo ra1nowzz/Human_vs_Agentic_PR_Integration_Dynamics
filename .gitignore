@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# figures/ and results/ are intentionally NOT ignored:
+# the PNGs and CSVs in them are committed deliverables (the paper figures),
+# not disposable build output.
