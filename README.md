@@ -56,6 +56,7 @@ Closed-unmerged PRs preclude a subsequent merge and therefore constitute a **com
 ![KM vs AJ comparison](figures/Methodology_Comparison_ALL_Agents_KM_vs_AJ.png)
 
 Treating unmerged closure as censoring yields systematically higher 1 − KM estimates than the Aalen–Johansen CIF. The two approaches correspond to different probability estimands; AJ directly estimates the cumulative incidence of merge in the presence of competing unmerged closure.
+
 ---
 
 ## Data & Reproduction
