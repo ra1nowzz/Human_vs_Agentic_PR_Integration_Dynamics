@@ -128,6 +128,7 @@ This repository contains preliminary empirical research conducted as part of an 
 ## References
 
 [1] H. Li, H. Zhang, and A. E. Hassan, "The Rise of AI Teammates in Software Engineering (SE) 3.0: How Autonomous Coding Agents Are Reshaping Software Engineering," *arXiv preprint arXiv:2507.15003*, 2025. (Dataset `hao-li/AIDev`)
+
 [2] M. Watanabe, H. Li, Y. Kashiwa, B. Reid, H. Iida, and A. E. Hassan, "On the Use of Agentic Coding: An Empirical Study of Pull Requests on GitHub," *ACM Transactions on Software Engineering and Methodology (TOSEM)*, 2026.
 
 ---
