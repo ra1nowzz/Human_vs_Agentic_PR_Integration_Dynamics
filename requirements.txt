@@ -1,5 +1,6 @@
-pandas
-matplotlib
 datasets
-lifelines
 jupyter
+lifelines
+matplotlib
+numpy
+pandas
